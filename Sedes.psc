@@ -12,19 +12,19 @@ Algoritmo sin_titulo
 		Leer x
 		Según x Hacer
 			1:
-				Limpiar pantalla
+				Limpiar Pantalla
 				Escribir 'Agregar Sedes'
 				Escribir 'Ingrese Id de la Sede:'
 				Leer id
-				Definir id como caracter
+				Definir id Como Cadena
 				Escribir 'Ingrese nombre de Sede:'
 				Leer ns
-				Definir ns como caracter
+				Definir ns Como Cadena
 				Escribir 'Ingrese telefono de Sede:'
 				Leer ts
-				Definir ts como caracter
+				Definir ts Como Cadena
 			2:
-				Limpiar pantalla
+				Limpiar Pantalla
 				Escribir 'Detalles Sedes'
 				Mientras condicion Hacer
 					Escribir 'Id de Sede:'
@@ -38,32 +38,41 @@ Algoritmo sin_titulo
 					Escribir ts
 				FinMientras
 			3:
-				Limpiar pantalla
+				Limpiar Pantalla
 				Escribir 'Modificar Detalles Sedes'
 				Escribir 'Ingrese Id de la Sede a modificar:'
 				Leer id
-				definir id como caracter
-				Mientras id <> id Hacer
+				Definir id Como Caracter
+				Mientras id<>id Hacer
 					Si condicion Entonces
 						Escribir 'Ingrese nuevo Id de sede:'
 						Leer nid
-						definir nid como caracter
+						Definir nid Como Cadena
 						Escribir 'Ingrese nuevo nombre de sede:'
 						Leer nsd
-						definir nsd como caracter
+						Definir nsd Como Cadena
 						Escribir 'Ingrese nuevo telefono de sede:'
 						Leer nts
-						definir nts como caracter
+						Definir nts Como Cadena
 						Escribir 'sede modificada correctamente'
 					FinSi
 				FinMientras
 			4:
-				Limpiar pantalla
+				Limpiar Pantalla
 				Escribir 'Detalles Sedes a borrar:'
+				Escribir 'Sistema busqueda de sedes'
+				Escribir 'Ingrese Id de sede a borrar'
+				Leer id
+				Definir id como caracter
+				Mientras condicion Hacer
+					Si condicion Entonces
+						Escribir 'Borrado de Sede exitoso'
+					FinSi
+				FinMientras
 		FinSegún
 		Escribir 'Presione Enter para continuar:'
 		Esperar Tecla
-	Hasta Que x = 5
+	Hasta Que x=5
 FinAlgoritmo
 
 Función SinTitulo
